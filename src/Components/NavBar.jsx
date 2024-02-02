@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Button, Menu, MenuItem, Box, IconButton, Drawer } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import Logo from "../../static/images/logo.png"
+import Logo from "../static/images/logo.png"
 
 const NavigationMenu = () => {
   const [anchorEl, setAnchorEl] = useState(null);
