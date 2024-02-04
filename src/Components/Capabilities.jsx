@@ -1,7 +1,7 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import nvai from '../static/images/nvai.png';
-import { boxPadding, normalText, textPadding } from '../theme';
+import { boxPadding, h2, } from '../theme';
 
 
 const Capabilities = () => {
@@ -69,7 +69,7 @@ const Capabilities = () => {
         padding: 0
       }} >
         <Box sx={{
-          fontSize: { xs: '3vw', sm: '2vw', md: '2vw', lg: '2vw', xl: '2vw' },
+          fontSize: h2,
           marginBottom: { xs: '3vw', sm: '2vw', md: '2vw', lg: '2vw', xl: '2vw' },
           paddingTop: boxPadding,
         }}>
@@ -91,13 +91,12 @@ const Capabilities = () => {
               paddingRight: isMobile ? '0' : '60px',
               paddingLeft: isMobile ? '0' : '60px',
               textAlign: 'left',
-              height: '100%'
+              height: '100%',
             }}>
               <Box sx={{
                 display: 'flex',
                 justifyContent: 'left',
                 alignItems: 'center',
-                height: '70%'
               }}>
                 <img
                   src={item.imageUrl}
@@ -111,26 +110,40 @@ const Capabilities = () => {
               </Box>
               <Box sx={{
                 fontWeight: '600',
-                fontSize: { xs: '3vw', sm: '2vw', md: '1vw', lg: '1vw', xl: '1vw' },
-                paddingTop: textPadding,
-              }} >
-                0{index + 1}
-              </Box>
-              <Box sx={{
-                fontSize: { xs: '3vw', sm: '2vw', md: '1vw', lg: '1vw', xl: '1vw' },
-                paddingBottom: textPadding,
                 
-                paddingTop: '20px',
-                fontWeight: '600'
+                paddingTop: '10px',
               }} >
-                {item.projectTitle}
+                 <h2 style={{
+                   fontWeight: '600',
+                }}>
+                  0{index + 1}
+                </h2>
+              
               </Box>
               <Box sx={{
-                fontSize: normalText,
-                width: '80%',
-                marginRght: '80px'
+                paddingBottom: '1rem',
+                
+                paddingTop: '1rem',
+               
               }} >
-                {item.desc}
+                <h2 style={{
+                   fontWeight: '600',
+                }}>
+                {item.projectTitle}
+                </h2>
+                
+              </Box>
+              <Box sx={{
+               
+                width: '80%',
+                marginRght: '80px',
+              }} >
+                
+                <h3 style={{
+                  fontWeight: '400'
+                }} >{item.desc}</h3>
+
+                
               </Box>
             </Box>
           </li>

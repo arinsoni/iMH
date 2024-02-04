@@ -1,6 +1,7 @@
 import { Box, IconButton } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import { h3, h4 } from "../theme";
 
 
 const InfoGrid = ({items}) => {
@@ -113,7 +114,7 @@ const InfoGrid = ({items}) => {
                 <Box
                   sx={{
                     alignSelf: 'flex-end',
-                    fontSize: { xs: '2vw', sm: '2vw', md: '1vw', lg: '1vw', xl: '1vw' },
+                    fontSize: h3,
                     paddingRight: '10px',
                     transition: 'font-size 0.3s',
                   }}
